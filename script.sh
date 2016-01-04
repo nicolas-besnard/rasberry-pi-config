@@ -20,3 +20,5 @@ fi
 /etc/init.d/ssh restart
 
 cp dot-emacs ~/.emacs
+
+chsh -s /bin/zsh
