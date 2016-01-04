@@ -1,5 +1,5 @@
 sudo apt-get update -y
-sudo apt-get install emacs htop git -y
+sudo apt-get install emacs htop git zsh -y
 mkdir ~/.ssh
 curl https://github.com/nicolas-besnard.keys >> ~/.ssh/authorized_keys
 
