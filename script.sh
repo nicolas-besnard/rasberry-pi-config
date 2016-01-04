@@ -10,4 +10,13 @@ if $passwordAuthenticationCommented; then
   echo " - SSH: PasswordAuthentication denied"
 fi
 
+UsePAMYes=$(cat /etc/ssh/sshd_config | grep -q "UsePAM yes")
+
+if $usePAMYes; then
+  sudo sed -i 's/usePAM yes/usePAM no/g' /etc/ssh/sshd_config
+  echo " - SSH: PAM denied"
+fi
+
+/etc/init.d/ssh restart
+
 cp dot-emacs ~/.emacs
