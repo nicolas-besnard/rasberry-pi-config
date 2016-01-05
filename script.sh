@@ -21,4 +21,7 @@ fi
 
 cp dot-emacs ~/.emacs
 
+echo " - Disable HDMI"
+/opt/vc/bin/tvservice -o # enable /opt/vc/bin/tvservice -p
+
 chsh -s /bin/zsh
