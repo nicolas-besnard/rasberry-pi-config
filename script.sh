@@ -1,5 +1,5 @@
 sudo apt-get update -y
-sudo apt-get install emacs htop git zsh -y
+sudo apt-get install htop git zsh tmux -y
 mkdir ~/.ssh
 curl https://github.com/nicolas-besnard.keys >> ~/.ssh/authorized_keys
 
@@ -18,8 +18,6 @@ if $usePAMYes; then
 fi
 
 /etc/init.d/ssh restart
-
-cp dot-emacs ~/.emacs
 
 echo " - Disable HDMI"
 /opt/vc/bin/tvservice -o # enable /opt/vc/bin/tvservice -p
