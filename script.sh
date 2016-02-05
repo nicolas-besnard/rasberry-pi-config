@@ -17,7 +17,7 @@ if $usePAMYes; then
   echo " - SSH: PAM denied"
 fi
 
-/etc/init.d/ssh restart
+sudo /etc/init.d/ssh restart
 
 echo " - Disable HDMI"
 /opt/vc/bin/tvservice -o # enable /opt/vc/bin/tvservice -p
