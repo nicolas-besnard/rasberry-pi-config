@@ -1,5 +1,5 @@
 sudo apt-get update -y
-sudo apt-get install htop git zsh tmux -y
+sudo apt-get install htop git zsh tmux vim -y
 mkdir ~/.ssh
 curl https://github.com/nicolas-besnard.keys >> ~/.ssh/authorized_keys
 
